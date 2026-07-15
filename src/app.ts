@@ -116,7 +116,7 @@ async function run() {
       try {
         const { id } = req.params;
 
-        const updatedData: Partial<_interface.Course> = req.body;
+        const updatedData: Partial<_interface.UpdateCourse> = req.body;
 
         const result = await coursesCollection.updateOne(
           {
